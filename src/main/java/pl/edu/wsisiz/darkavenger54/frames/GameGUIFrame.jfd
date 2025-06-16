@@ -1,0 +1,114 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp panel1:::p::p, space :::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par l {seq {comp panel4:::::x, space :::p}, seq {comp panel2:::p::p, space :::p, comp panel3:::::x}}}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp panel2:::p::p, comp panel3:::::x}, space :::p, comp panel4:::p::p, space ::11:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par l:::p {comp button6::::100:x, comp button3:::::x, comp button0:::::x}, space :::p, par l:::p {comp button7::::100:x, comp button4:::::x, comp button1:::::x}, space :::p, par l:::p {comp button2::::100:x, comp button5:::::x, comp button8:::::x}, space ::10:x}}"
+					"$verticalGroup": "par l {seq l {space :::p, par l:::p {comp button0::::100:x, comp button1:::::x, comp button2:::::x}, space :::p, par l:::p {comp button3::::100:x, comp button4:::::x, comp button5:::::x}, space :::p, par l:::p {comp button6::::100:x, comp button7:::::x, comp button8:::::x}, space ::11:x}}"
+				} ) {
+					name: "panel2"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button0"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button5"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par l:::p {comp scrollPane1:::::x, seq {comp textField:::p:250:p, space :::p, comp sendMsgButton:::p:100:p}}, space :::x}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp scrollPane1:::::x, space :::p, par b {comp textField::b:p::p, comp sendMsgButton::b:p::p}, space :::p}}"
+				} ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "sendMsgButton"
+						"text": "Send"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendMsg", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea1"
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par l {comp startNewGameButton::l:p::p, comp statusLabel::l:p::p}, space ::173:x, comp panel5:::p::p, space :p:143:p}}"
+					"$verticalGroup": "par l {seq {space :::p, par l {comp panel5:::p::p, seq {comp statusLabel:::p::p, space :p:15:p, comp startNewGameButton:::p::p}}, space :0:35:x}}"
+				} ) {
+					name: "panel4"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "statusLabel"
+						"text": "123456789012345678901234567890"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "startNewGameButton"
+						"text": "Start New Game"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startNewGame", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp label3:::p::p, space :::p, comp nameLabel:::p::p}, seq l {comp label4:::p::p, space :::p, comp label5:::p::p}}, space ::10:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, par b {comp label3::b:p::p, comp nameLabel::b:p::p}, space :::p, par b {comp label4::b:p::p, comp label5::b:p::p}, space ::26:x}}"
+					} ) {
+						name: "panel5"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "nameLabel"
+							"text": "12345678901234567890"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "Your Name:"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "Your Figure:"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "1234567890"
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 530 )
+		} )
+	}
+}
